@@ -10,13 +10,13 @@ export default function CourseList() {
     }
 
     return (
-        <div>
+        <>
             <ul>
                 {courses.map(course => <li key={course}>{course}</li>)}
             </ul>
             <button type="button" onClick={addCourse}>
                 addCourse
             </button>
-        </div>
+        </>
     );
 }
